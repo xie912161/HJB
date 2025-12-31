@@ -2,80 +2,91 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>教育网站导航</title>
+    <title>教育技术网站主页</title>
     <style>
-        body { 
-            font-family: 'Microsoft YaHei', Arial, sans-serif; 
-            margin: 40px; 
-            line-height: 1.6; 
-            background: #f5f7fa;
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            margin: 40px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
         }
-        h1 { 
-            color: #2c3e50; 
-            text-align: center; 
-            font-size: 32px;
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
         }
         .subtitle {
-            text-align: center;
-            color: #666;
+            color: #7f8c8d;
             margin-bottom: 40px;
         }
-        .nav-box {
-            text-align: center;
-            margin: 40px 0;
-        }
-        .btn {
-            display: inline-block;
+        .nav-button {
+            display: block;
             background: #3498db;
             color: white;
-            padding: 15px 30px;
-            margin: 15px;
+            padding: 18px;
+            margin: 20px 0;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 15px;
             font-size: 18px;
             font-weight: bold;
-            min-width: 200px;
+            transition: all 0.3s;
         }
-        .btn:hover {
+        .nav-button:hover {
             background: #2980b9;
-            transform: scale(1.05);
+            transform: translateY(-3px);
         }
+        .button1 { background: #e74c3c; }
+        .button1:hover { background: #c0392b; }
+        .button2 { background: #27ae60; }
+        .button2:hover { background: #219653; }
         .info {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            margin: 40px auto;
-            max-width: 600px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            color: #777;
+            background: #f8f9fa;
             padding: 20px;
+            border-radius: 15px;
+            margin-top: 40px;
+            text-align: left;
+        }
+        .url {
+            background: #2c3e50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin: 10px 0;
+            word-break: break-all;
         }
     </style>
 </head>
 <body>
-    <h1>教育技术新生导论课作业网站</h1>
-    <p class="subtitle">基于GitHub Pages的免费教育平台</p >
-    
-    <div class="nav-box">
-        <a href=" " class="btn">🏫 进入主教育网站</a ><br>
-        <a href="HomeworkAndTest.htm" class="btn">📝 进入作业测验</a >
+    <div class="container">
+        <h1>🎓 教育技术新生导论课</h1>
+        <p class="subtitle">数智时代免费教育网站平台</p >
+        
+        <a href=" " class="nav-button button1">
+            🏫 进入主教育网站
+        </a >
+        
+        <a href="HomeworkAndTest.htm" class="nav-button button2">
+            📝 进入作业测验
+        </a >
+        
+        <div class="info">
+            <h3>📚 课程信息</h3>
+            <p><strong>课程：</strong>教育技术新生导论课之一</p >
+            <p><strong>主题：</strong>数智时代的教育技术思维</p >
+            <p><strong>平台：</strong>GitHub Pages + 钉钉云盘 + 知乎</p >
+            
+            <h3 style="margin-top:20px;">🌐 网站地址</h3>
+            <div class="url">https://xie912161.github.io/HJB/</div>
+        </div>
     </div>
-    
-    <div class="info">
-        <h2>课程信息</h2>
-        <p><strong>课程名称：</strong>教育技术新生导论课之一</p >
-        <p><strong>主题：</strong>数智时代的教育技术思维主线思考</p >
-        <p><strong>构建内容：</strong>免费e-Web教育网站平台</p >
-        <p><strong>技术平台：</strong>GitHub Pages + 钉钉云盘 + 知乎平台</p >
-    </div>
-    
-    <footer>
-        <p>访问地址：https://xie912161.github.io/HJB/</p >
-        <p>© 2024 教育技术新生导论课</p >
-    </footer>
 </body>
 </html>
